@@ -1,0 +1,10 @@
+.imageElement {
+    background: #303030;
+    height: 90%;
+    max-width: 70%;
+    border-radius: 20px;
+}
+
+.slideChildrenContainer {
+    background: #303030;
+}

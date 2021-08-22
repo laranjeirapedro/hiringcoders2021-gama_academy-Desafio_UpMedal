@@ -1,0 +1,202 @@
+{
+  "store.home": { 
+    "blocks": [
+      "tab-layout",
+      "list-context.image-list#demo",
+      "slider-layout#demo-images",
+      "flex-layout.row",
+      //"modal-trigger#first",
+      "list-context.product-list",
+      "minicart-product-list#home",
+      "newsletter"
+    ]
+  },
+// INICIO DO BLOCO TAB-LAYOUT
+  "tab-layout": {
+    "children":[
+      "tab-list",
+      "tab-content"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "home1"
+    }
+  },
+// LISTA DE TABS
+  "tab-list": {
+    "children":[
+      "tab-list.item#1",
+      "tab-list.item#2",
+      "tab-list.item#3",
+      "tab-list.item#4",
+      "tab-list.item#5",
+      "tab-list.item#6",
+      "tab-list.item#7"
+    ]
+  },
+// ITEM PROMOÇÃO
+  "tab-list.item#1": {
+    "props":{
+      "tabId": "tabPromocao",
+      "label": "Promoção"
+    }
+  },
+// ITEM CORINTHIANS
+  "tab-list.item#2": {
+    "props":{
+      "tabId": "tabCorinthians",
+      "label": "Corinthians"
+    }
+  },
+// ITEM PALMEIRAS
+  "tab-list.item#3": {
+    "props":{
+      "tabId": "tabPalmeiras",
+      "label": "Palmeiras"
+    }
+  },
+// ITEM SIGNOS
+  "tab-list.item#4": {
+    "props":{
+      "tabId": "tabSignos",
+      "label": "Signos"
+    }
+  },
+// ITEM DIVERTIDOS
+  "tab-list.item#5": {
+    "props":{
+      "tabId": "tabDivertidos",
+      "label": "Divertidos"
+    }
+  },
+// ITEM 7 MARAVILHAS
+  "tab-list.item#6": {
+    "props":{
+      "tabId": "tab7Maravilhas",
+      "label": "7 Maravilhas"
+    }
+  },
+// ITEM GUERREIROS
+  "tab-list.item#7": {
+    "props":{
+      "tabId": "tabGuerreiros",
+      "label": "Guerreiros"
+    }
+  },
+// CONTEUDO DAS TABS
+  "tab-content": {
+    "children":[
+      "tab-content.item#1",
+      "tab-content.item#2"
+    ]
+  },
+// CONTEUDO DO ITEM PROMOÇÃO
+  "tab-content.item#1": {
+    "children": [
+      "rich-text#1"
+    ],
+    "props":{
+      "tabId": "tabPromocao"
+    }
+  },
+  "rich-text#1": {
+    "props":{
+      "text": "",
+      "textPosition": "center",
+      "font": "t-heading-3"
+    }
+  },
+// CONTEUDO DO ITEM CORINTHIANS
+  "tab-content.item#2": {
+    "children":[
+      "rich-text#2"
+    ],
+    "props":{
+      "tabId": "tabCorinthians"
+    }
+  },
+  "rich-text#2": {
+    "props":{
+      "text": "",
+      "textPosition": "center",
+      "font": "t-heading-3"
+    }
+  },
+// BLOCO DO SLIDER LAYOUT (CORROUSEL)
+  "list-context.image-list#demo": {
+    "children":[
+      "slider-layout#demo-images"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T020621Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7f45dced5ba374d51b922d16d48c0dc672134ee10f9e6fa568d59d7511acd4f1"
+        },
+        {
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T020621Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=11679bef6f8f097d678a374bba7bc3a374afa12e5969cb695fed0846659df656"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  // BLOCO DO LIST CONTEXT (QUICKVIEW)
+  "list-context.product-list": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children":[
+      "slider-layout"
+    ]
+  },
+  "product-summary.shelf": {
+    "children":[
+      //"modal-trigger#quickview",
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "add-to-cart-button"
+    ]
+  },
+/*   "modal-trigger#quickview": {
+    "children":[
+      "modal-layout#quickview"
+    ]
+  },
+  "modal-layout#quickview": {
+    "children":[
+      "product-summary-name",
+      "product-images",
+      "product-summary-quantity",
+      "add-to-cart-button"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  }, */
+// BLOCO DO PRODUCT LIST
+  "minicart-product-list#home": {
+    "blocks": [
+      "product-list"
+    ]
+  }
+}

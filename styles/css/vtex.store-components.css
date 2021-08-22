@@ -1,0 +1,26 @@
+.container {
+    margin: 0px;
+  }
+.form {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.infoCardContainer {
+    background: #303030;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.imageElement {
+    background: #303030;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.searchBarContainer {
+    background: #212121;
+}
+
+.container {
+    background: #303030;
+}
